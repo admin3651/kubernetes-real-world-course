@@ -1,11 +1,11 @@
 variable "pubsub1" {
   type = string
-  default = "subnet-051c49a4d8434be66"
+  default = "subnet-043645cfcc0297a08"
 }
 
 variable "pubsub2" {
   type = string
-  default = "subnet-02273f25c912d46ee"
+  default = "subnet-00045d82f22954a24"
 }
 
 variable "eksIAMRole" {
@@ -20,7 +20,7 @@ variable "EKSClusterName" {
 
 variable "k8sVersion" {
   type = string
-  default = "1.26"
+  default = "1.29"
 }
 
 variable "workerNodeIAM" {
