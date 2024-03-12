@@ -30,12 +30,12 @@ variable "workerNodeIAM" {
 
 variable "max_size" {
   type = string
-  default = 3
+  default = 4
 }
 
 variable "desired_size" {
   type = string
-  default =3
+  default = 4
 }
 variable "min_size" {
   type = string
