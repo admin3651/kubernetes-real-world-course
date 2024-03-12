@@ -37,7 +37,7 @@ jobs:
 
     - name: Terraform Init
       working-directory: Day-One/cluster/
-      run: terraform init -backend-config "bucket=terraformaws11" -backend-config "key=eks-prod.tfstate"
+      run: terraform init -backend-config "bucket=ml-terraformaws11" -backend-config "key=eks-terraform.tfstate"
            
     - name: Terraform Format
       working-directory: Day-One/cluster/
@@ -45,8 +45,8 @@ jobs:
 
     - name: Terraform Plan
       working-directory: Day-One/cluster/
-      run: terraform plan -var="k8sVersion=1.27"
+      run: terraform plan -var="k8sVersion=1.29"
     
     - name: Terraform Apply
       working-directory: Day-One/cluster/
-      run: terraform apply -var="k8sVersion=1.27" -auto-approve
+      run: terraform apply -var="k8sVersion=1.29" -auto-approve

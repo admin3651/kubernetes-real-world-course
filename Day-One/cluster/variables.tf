@@ -10,12 +10,12 @@ variable "pubsub2" {
 
 variable "eksIAMRole" {
   type = string
-  default = "prodEKSCluster"
+  default = "devEKSCluster"
 }
 
 variable "EKSClusterName" {
   type = string
-  default = "prodEKS"
+  default = "devEKS"
 }
 
 variable "k8sVersion" {
@@ -25,29 +25,29 @@ variable "k8sVersion" {
 
 variable "workerNodeIAM" {
   type = string
-  default = "prodWorkerNodes"
+  default = "devWorkerNodes"
 }
 
 variable "max_size" {
   type = string
-  default = 4
+  default = 2
 }
 
 variable "desired_size" {
   type = string
-  default = 3
+  default =2
 }
 variable "min_size" {
   type = string
-  default = 3
+  default = 1
 }
 
 variable "instanceType" {
   type = list
-  default = ["t3.xlarge"]
+  default = ["t2.small"]
 }
 
 variable "environment" {
   type = string
-  default = "prod"
+  default = "dev"
 }
