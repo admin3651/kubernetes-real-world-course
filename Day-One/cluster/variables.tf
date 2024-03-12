@@ -30,12 +30,12 @@ variable "workerNodeIAM" {
 
 variable "max_size" {
   type = string
-  default = 2
+  default = 3
 }
 
 variable "desired_size" {
   type = string
-  default =2
+  default =3
 }
 variable "min_size" {
   type = string
@@ -44,7 +44,7 @@ variable "min_size" {
 
 variable "instanceType" {
   type = list
-  default = ["t2.small"]
+  default = ["t2.large"]
 }
 
 variable "environment" {
