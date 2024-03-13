@@ -45,8 +45,8 @@ jobs:
 
     - name: Terraform Plan
       working-directory: Day-One/cluster/
-      run: terraform plan -var="k8sVersion=1.28"
+      run: terraform plan -var="k8sVersion=1.29"
     
     - name: Terraform Apply
       working-directory: Day-One/cluster/
-      run: terraform apply -var="k8sVersion=1.28" -auto-approve
+      run: terraform apply -var="k8sVersion=1.29" -auto-approve
